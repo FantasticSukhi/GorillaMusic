@@ -1,24 +1,4 @@
-# MIT License
-#
-# Copyright (c) 2023 AnonymousX1025
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
 
 import asyncio
 
@@ -32,7 +12,7 @@ from FallenMusic import app, app2
 
 @app.on_message(filters.command("broadcast") & filters.user(OWNER_ID))
 async def broadcast(_, message: Message):
-    brep = await message.reply_text("sᴛᴀʀᴛᴇᴅ ᴀssɪsᴛᴀɴᴛ ʙʀᴏᴀᴅᴄᴀsᴛ...")
+    brep = await message.reply_text("𝕭𝖗𝖔𝖆𝖉𝖈𝖆𝖘𝖙 𝖎𝖘 𝖘𝖙𝖆𝖗𝖙𝖎𝖓𝖌...")
     if message.reply_to_message:
         x = message.reply_to_message.id
         y = message.chat.id
@@ -60,6 +40,6 @@ async def broadcast(_, message: Message):
         except Exception:
             continue
     try:
-        await brep.edit_text(f"**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ {sent} ᴄʜᴀᴛs.**")
+        await brep.edit_text(f"**𝔅𝔯𝔞𝔬𝔞𝔡𝔠𝔞𝔰𝔱𝔢𝔡 𝔪𝔢𝔰𝔞𝔤𝔤𝔢 𝔦𝔫 {sent} 𝔠𝔥𝔞𝔱𝔰.**")
     except:
-        await message.reply_text(f"**ʙʀᴏᴀᴅᴄᴀsᴛᴇᴅ ᴍᴇssᴀɢᴇ ɪɴ {sent} ᴄʜᴀᴛs.**")
+        await message.reply_text(f"**𝔅𝔯𝔞𝔬𝔞𝔡𝔠𝔞𝔰𝔱𝔢𝔡 𝔪𝔢𝔰𝔞𝔤𝔤𝔢 𝔦𝔫 {sent} 𝔠𝔥𝔞𝔱𝔰.**")
