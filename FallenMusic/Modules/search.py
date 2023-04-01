@@ -42,11 +42,11 @@ async def ytsearch(_, message: Message):
         i = 0
         text = ""
         while i < 4:
-            text += f"✨ ᴛɪᴛʟᴇ : {results[i]['title']}\n"
-            text += f"⏱ ᴅᴜʀᴀᴛɪᴏɴ : `{results[i]['duration']}`\n"
-            text += f"👀 ᴠɪᴇᴡs : `{results[i]['views']}`\n"
-            text += f"📣 ᴄʜᴀɴɴᴇʟ : {results[i]['channel']}\n"
-            text += f"🔗 ʟɪɴᴋ : https://youtube.com{results[i]['url_suffix']}\n\n"
+            text += f"✨ 𝔗𝔦𝔱𝔩𝔢 : {results[i]['title']}\n"
+            text += f"⏱ 𝔇𝔲𝔯𝔞𝔱𝔦𝔬𝔫 : `{results[i]['duration']}`\n"
+            text += f"👀 𝔙𝔦𝔢𝔴 : `{results[i]['views']}`\n"
+            text += f"📣 ℭ𝔥𝔞𝔫𝔫𝔢𝔩 : {results[i]['channel']}\n"
+            text += f"🔗 𝔏𝔦𝔫𝔨 : https://youtube.com{results[i]['url_suffix']}\n\n"
             i += 1
         key = InlineKeyboardMarkup(
             [
