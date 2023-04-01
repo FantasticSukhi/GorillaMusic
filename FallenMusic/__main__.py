@@ -1,25 +1,3 @@
-# MIT License
-#
-# Copyright (c) 2023 AnonymousX1025
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
-
 import asyncio
 import importlib
 import os
@@ -58,7 +36,7 @@ async def fallen_startup():
     try:
         await app.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ʙᴏᴛ ✯\n\n𖢵 ɪᴅ : `{BOT_ID}`\n𖢵 ɴᴀᴍᴇ : {BOT_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{BOT_USERNAME}",
+            f"✯ ɢօʀɨʟʟǟ ʍʊֆɨƈ ɮօȶ ✯\n\n𖢵 𝔦𝔡 : `{BOT_ID}`\n𖢵 𝔫𝔞𝔪𝔢 : {BOT_NAME}\n𖢵 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 : @{BOT_USERNAME}\n𖢵🅂🅄🄿🄿🄾🅁🅃 : @GORILLA_NETWORK\n ©️ 🄱🄻🄰🄲🄺🄼🄰🄼🄱🄰  ",
         )
     except:
         LOGGER.error(
@@ -68,17 +46,17 @@ async def fallen_startup():
     try:
         await app2.send_message(
             SUNAME,
-            f"✯ ғᴀʟʟᴇɴ ᴍᴜsɪᴄ ᴀss ✯\n\n𖢵 ɪᴅ : `{ASS_ID}`\n𖢵 ɴᴀᴍᴇ : {ASS_NAME}\n𖢵 ᴜsᴇʀɴᴀᴍᴇ : @{ASS_USERNAME}",
+            f"💕 ɢօʀɨʟʟǟ ʍʊֆɨƈ ǟֆֆ ✯\n\n💕 𝔦𝔡 : `{ASS_ID}`\n𖢵 𝔫𝔞𝔪𝔢 : {ASS_NAME}\n𖢵 𝔲𝔰𝔢𝔯𝔫𝔞𝔪𝔢 : @{ASS_USERNAME}",
         )
     except:
         LOGGER.error(
-            f"{ASS_NAME} failed to send message at @{SUNAME}, please go & check."
+            f"{ASS_NAME} ᶠᵃⁱˡᵉᵈ ᵗᵒ ˢᵉⁿᵈ ᵐᵉˢˢᵃᵍᵉ ᵃᵗ @{SUNAME}, ᵖˡᵉᵃˢᵉ ᵍᵒ & ᶜʰᵉᶜᵏ."
         )
 
     await app2.send_message(BOT_USERNAME, "/start")
 
-    LOGGER.info(f"[•] Bot Started As {BOT_NAME}.")
-    LOGGER.info(f"[•] Assistant Started As {ASS_NAME}.")
+    LOGGER.info(f"[•] Gorilla Bot Started As {BOT_NAME}.")
+    LOGGER.info(f"[•] Gorilla Assistant Started As {ASS_NAME}.")
 
     LOGGER.info(
         "[•] \x53\x74\x61\x72\x74\x69\x6e\x67\x20\x50\x79\x54\x67\x43\x61\x6c\x6c\x73\x20\x43\x6c\x69\x65\x6e\x74\x2e\x2e\x2e"
@@ -89,4 +67,4 @@ async def fallen_startup():
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(fallen_startup())
-    LOGGER.error("Fallen Music Bot Stopped.")
+    LOGGER.error("Gorilla Music Bot Stopped.")
