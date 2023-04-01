@@ -1,24 +1,4 @@
-# MIT License
-#
-# Copyright (c) 2023 AnonymousX1025
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-# SOFTWARE.
+
 
 import platform
 import re
@@ -39,7 +19,7 @@ from FallenMusic.Modules import ALL_MODULES
 @app.on_message(filters.command(["stats", "sysstats"]) & SUDOERS)
 async def sys_stats(_, message: Message):
     sysrep = await message.reply_text(
-        f"ɢᴇᴛᴛɪɴɢ {BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs, ɪᴛ'ʟʟ ᴛᴀᴋᴇ ᴀ ᴡʜɪʟᴇ..."
+        f"𝐆𝐄𝐓𝐓𝐈𝐍𝐆 {BOT_NAME} 𝐒𝐘𝐒𝐓𝐄𝐌 𝐒𝐓𝐀𝐓𝐒, 𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐒𝐎𝐌𝐄𝐓𝐈𝐌𝐄𝐒..."
     )
     try:
         await message.delete()
@@ -76,32 +56,32 @@ async def sys_stats(_, message: Message):
 
     await sysrep.edit_text(
         f"""
-➻ <u>**{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs**</u>
+➻ <u>**{BOT_NAME} 𝔰𝔶𝔰𝔱𝔢𝔪 𝔰𝔱𝔞𝔱𝔦𝔠𝔰**</u>
 
-**ᴩʏᴛʜᴏɴ :** {pyver.split()[0]}
-**ᴩʏʀᴏɢʀᴀᴍ :** {pyrover}
-**ᴩʏ-ᴛɢᴄᴀʟʟs :** {pytgver}
-**sᴜᴅᴏᴇʀs :** `{sudoers}`
-**ᴍᴏᴅᴜʟᴇs :** `{mod}`
+**𝔓𝔶𝔱𝔥𝔬𝔫 :** {pyver.split()[0]}
+**𝔓𝔶𝔯𝔬𝔤𝔯𝔞𝔪 :** {pyrover}
+**𝔓𝔶-𝔱𝔤𝔠𝔞𝔩𝔩𝔰 :** {pytgver}
+**𝔖𝔲𝔡𝔬𝔢𝔯𝔰 :** `{sudoers}`
+**𝔐𝔬𝔡𝔲𝔩𝔢𝔰 :** `{mod}`
 
-**ɪᴘ :** {ip_address}
-**ᴍᴀᴄ :** {mac_address}
-**ʜᴏsᴛɴᴀᴍᴇ :** {hostname}
-**ᴘʟᴀᴛғᴏʀᴍ :** {sp}
-**ᴘʀᴏᴄᴇssᴏʀ :** {processor}
-**ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ :** {architecture}
-**ᴘʟᴀᴛғᴏʀᴍ ʀᴇʟᴇᴀsᴇ :** {platform_release}
-**ᴘʟᴀᴛғᴏʀᴍ ᴠᴇʀsɪᴏɴ :** {platform_version}
+**ℑ𝔓 :** {ip_address}
+**𝔐𝔞𝔠 :** {mac_address}
+**ℌ𝔬𝔰𝔱𝔫𝔞𝔪𝔢 :** {hostname}
+**𝔓𝔩𝔞𝔱𝔣𝔬𝔯𝔪 :** {sp}
+**𝔓𝔯𝔬𝔠𝔢𝔰𝔰𝔬𝔯 :** {processor}
+**𝔄𝔯𝔠𝔥𝔦𝔱𝔢𝔠𝔱𝔲𝔯𝔢 :** {architecture}
+**𝔓𝔩𝔞𝔱𝔣𝔬𝔯𝔪 ℜ𝔢𝔩𝔢𝔞𝔰𝔢 :** {platform_release}
+**𝔓𝔩𝔞𝔱𝔣𝔬𝔯𝔪 𝔙𝔢𝔯𝔰𝔦𝔬𝔫 :** {platform_version}
 
-        <b><u>sᴛᴏʀᴀɢᴇ</b><u/>
-**ᴀᴠᴀɪʟᴀʙʟᴇ :** {total[:4]} ɢɪʙ
-**ᴜsᴇᴅ :** {used[:4]} ɢɪʙ
-**ғʀᴇᴇ :** {free[:4]} ɢɪʙ
+        <b><u>𝔖𝔱𝔬𝔯𝔞𝔤𝔢</b><u/>
+**𝔄𝔳𝔞𝔦𝔩𝔞𝔟𝔩𝔢 :** {total[:4]} ɢɪʙ
+**𝔘𝔰𝔢𝔡 :** {used[:4]} ɢɪʙ
+**𝔉𝔯𝔢𝔢 :** {free[:4]} ɢɪʙ
 
-**ʀᴀᴍ :** {ram}
-**ᴩʜʏsɪᴄᴀʟ ᴄᴏʀᴇs :** {p_core}
-**ᴛᴏᴛᴀʟ ᴄᴏʀᴇs :** {t_core}
-**ᴄᴩᴜ ғʀᴇǫᴜᴇɴᴄʏ :** {cpu_freq}""",
+**ℜ𝔞𝔪 :** {ram}
+**𝔓𝔥𝔶𝔰𝔦𝔠𝔞𝔩 ℭ𝔬𝔯𝔢𝔰 :** {p_core}
+**𝔗𝔬𝔱𝔞𝔩 ℭ𝔬𝔯𝔢𝔰 :** {t_core}
+**ℭ𝔓𝔘 𝔉𝔯𝔢𝔮𝔲𝔢𝔫𝔠𝔶 :** {cpu_freq}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
